@@ -30,7 +30,7 @@ namespace DowJones.DAL
         {
             get
             {
-                if (StocksRepository == null)
+                if (stocksRepository == null)
                 {
                     stocksRepository = new GenericRepository<Stock>(dowJonesContext);
                 }
