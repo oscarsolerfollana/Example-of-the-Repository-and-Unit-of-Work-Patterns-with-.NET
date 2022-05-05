@@ -27,6 +27,36 @@ public virtual void Delete(object id)
 ```
 
 This class contains all the methods for creating, deleting and manipulating data with Entity Framework.
-Once the generic repository class is created, we create
+Once the generic repository class is created, we need to create a Unit of Work class.
+
+A Unit of Work is an encapsulation of takes responsability of doing one single transaction related to one single unit of business, that involves multiple database operation.
+
+```c#
+...
+public GenericRepository<User> UsersRepository
+{
+    get
+    {
+        if (usersRepository == null)
+        {
+            usersRepository = new GenericRepository<User>(dowJonesContext);
+        }
+        return usersRepository;
+    }
+}
+
+public GenericRepository<Stock> StocksRepository
+{
+    get
+    {
+        if (StocksRepository == null)
+        {
+            stocksRepository = new GenericRepository<Stock>(dowJonesContext);
+        }
+        return stocksRepository;
+    }
+}
+...
+```
 
 (Under construction...)
