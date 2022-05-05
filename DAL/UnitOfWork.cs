@@ -37,7 +37,11 @@ namespace DowJones.DAL
                 return stocksRepository;
             }
         }
-
+        
+        public void Save()
+        {
+            dowJonesContext.SaveChanges();
+        }
 
         private bool disposed = false;
 
