@@ -1,6 +1,6 @@
 # Example of the Repository and Unit of Work Patterns with .NET
 
-> In this example, I want to show an implementation of Repository Pattern and Unit of Work Pattern in .NET. We will use Entity Framework to connect to a Data Base.
+> In this example, I want to show an implementation of Repository Pattern and Unit of Work Pattern in .NET. We will use Entity Framework to connect to a database.
 <br/>
 
 ## DbContext
