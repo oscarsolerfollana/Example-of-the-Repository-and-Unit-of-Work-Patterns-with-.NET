@@ -11,12 +11,12 @@ In the overriden OnModelCreating method, we will need to map our entities fields
 ```c#
 ...
  //Users
-            builder.Entity<User>().HasKey(table => new {
-                table.Id
-            });
-            builder.Entity<User>().Property(p => p.Name).HasColumnName("Nombre");
-            builder.Entity<User>().Property(p => p.Surnames).HasColumnName("Apellidos");
-            builder.Entity<User>().ToTable("Usuarios");
+builder.Entity<User>().HasKey(table => new {
+    table.Id
+});
+builder.Entity<User>().Property(p => p.Name).HasColumnName("Nombre");
+builder.Entity<User>().Property(p => p.Surnames).HasColumnName("Apellidos");
+builder.Entity<User>().ToTable("Usuarios");
 ...
 ```
 
