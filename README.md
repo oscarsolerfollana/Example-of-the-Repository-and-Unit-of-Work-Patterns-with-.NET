@@ -8,6 +8,18 @@
 Firsty, we create our Database Context.
 In the overriden OnModelCreating method, we will need to map our entities fields with the tables columns of the database, in addition to other configurations (like primary key).
 
+```c#
+...
+ //Users
+            builder.Entity<User>().HasKey(table => new {
+                table.Id
+            });
+            builder.Entity<User>().Property(p => p.Name).HasColumnName("Nombre");
+            builder.Entity<User>().Property(p => p.Surnames).HasColumnName("Apellidos");
+            builder.Entity<User>().ToTable("Usuarios");
+...
+```
+
 ## Generic Repository
 
 We create a Generic Repository in our Data Access Layer (DAL), through which we can access to our database.
