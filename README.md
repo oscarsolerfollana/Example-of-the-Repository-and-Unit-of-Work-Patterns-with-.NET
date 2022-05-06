@@ -34,7 +34,7 @@ Once the generic repository class is created, we need to create a Unit of Work c
 
 ## Unit of Work
 
-A Unit of Work is a tool which can be used to make one transaction that involves one or more database operation.
+A Unit of Work is a tool which can be used to make one transaction that involves one or more database operations.
 
 ```c#
 ...
