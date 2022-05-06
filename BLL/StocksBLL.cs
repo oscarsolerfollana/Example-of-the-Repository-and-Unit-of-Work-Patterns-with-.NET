@@ -22,6 +22,7 @@ namespace DowJones.BLL
             if (stock == null) return;
             stock.Price = price;
             unitOfWork.StocksRepository.Update(stock);
+            unitOfWork.Save();
         }
     }
 }
