@@ -5,7 +5,7 @@
 
 ## DbContext
 
-Firsty, we create our Database Context.
+Firstly, we create our Database Context.
 In the overriden OnModelCreating method, we will need to map our entities fields with the tables columns of the database, in addition to other configurations (like primary key).
 
 ```c#
