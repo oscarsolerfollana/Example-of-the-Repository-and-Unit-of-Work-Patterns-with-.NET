@@ -5,9 +5,9 @@
 
 
 #### Table of Contents
-[DbContext](#dbContext)
-[Generic Repository](#generic-repository)  
-[Unit of Work](#unit-of-work)  
+[DbContext](#dbContext)<br/>
+[Generic Repository](#generic-repository)<br/>
+[Unit of Work](#unit-of-work)<br/>
 [Entity Framework configuration](#entity-framework-configuration)
 <br/>
 
