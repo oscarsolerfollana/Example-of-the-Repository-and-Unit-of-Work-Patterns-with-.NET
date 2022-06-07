@@ -84,4 +84,21 @@ public void Save()
 
 The Unit of Work class shares the same DbContext with all its repositories. This way, you can make one single transaction, even if it involves more than one repositories. Doing SaveChanges() at the end, when Save method of UnitOfWork is called, will make succeed or fail every changes at the same time.
 
-(Under construction...)
+## Entity Framework configuration
+
+Finally, we must configure the mapping of columns and tables names, we only need to map those whose name do not match with the name of the table in the database.
+Also we configure which column is the primary key, and other properties such as identity columns with auto-increment.
+
+```c#
+...
+protected override void OnModelCreating(ModelBuilder builder)
+        {
+            //Users
+            builder.Entity<User>().HasKey(table => new {
+                table.Id
+            });
+            builder.Entity<User>().Property(p => p.Name).HasColumnName("Nombre");
+            builder.Entity<User>().Property(p => p.Surnames).HasColumnName("Apellidos");
+            builder.Entity<User>().ToTable("Usuarios");
+...
+```
