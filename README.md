@@ -3,6 +3,14 @@
 > In this example, I want to show an implementation of Repository Pattern and Unit of Work Pattern in .NET. We will use Entity Framework to connect to a database.
 <br/>
 
+
+#### Table of Contents
+[DbContext](#dbContext)  
+[Generic Repository](#generic-repository)  
+[Unit of Work](#unit-of-work)
+[Entity Framework configuration](#entity-framework-configuration)  
+<br/>
+
 ## DbContext
 
 Firstly, we create our Database Context.
