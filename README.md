@@ -5,10 +5,10 @@
 
 
 #### Table of Contents
-[DbContext](#dbContext)  
+[DbContext](#dbContext)
 [Generic Repository](#generic-repository)  
-[Unit of Work](#unit-of-work)
-[Entity Framework configuration](#entity-framework-configuration)  
+[Unit of Work](#unit-of-work)  
+[Entity Framework configuration](#entity-framework-configuration)
 <br/>
 
 ## DbContext
